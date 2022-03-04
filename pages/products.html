@@ -11,8 +11,8 @@
 </head>
 <body>
     <section>
-        <header class="container container1">
-            <nav class="main__nav" id="nav-bar">
+        <header class="container container__header">
+            <nav class="header__nav" id="nav-bar">
                 <ul>
                     <a class="icon" onclick="burgerMenu()">
                         <i class="fa fa-bars"></i></a>
@@ -24,55 +24,57 @@
                 </ul>
             </nav>
         </header>
-        <div class="container container2">
-            <div class="main__img main__img--one">
-                    <img class="img--one" src="../images/working_man.jpg" alt="worker at computer">
-                </div>
-        </div>
-        <div class="container container3">
-            <div class="main__content--text">
-                <div class="main__heading">
+
+        <main class="container container__main">
+            <div class="container__main--img container__main--img1">
+                <img class="img1" src="../images/working_man.jpg" alt="worker at computer">
+            </div>
+            
+            <div class="container__main--text">
+                <div class="container__main--info-text">
+                    <div class="container__main--heading">
                     <h1>Företagsnamn</h1>
-                </div>
-                <div class="main__info">
-                    <h3>Rubrik</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            A laudantium, culpa nemo fugiat quibusdam quasi ipsam sit 
-                            quam iusto possimus cumque, obcaecati minus est dolores. 
-                            Tempore, rerum. Dignissimos, maxime tempora. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit. Fugiat possimus 
-                            consequatur eius. Possimus, dignissimos nisi consequatur vero 
-                            fugit, similique eum modi dolore eligendi sapiente ullam cumque 
-                            nulla sed repudiandae odit? </p>
-                </div>
-                <div>
-                    <h5>Underrubrik</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Culpa repellat consequatur fuga deserunt eos tempora. Neque 
-                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
-                            tempora consectetur pariatur, recusandae blanditiis? 
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="container__main--info container__main--info1">
+                        <h3>Rubrik</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                A laudantium, culpa nemo fugiat quibusdam quasi ipsam sit 
+                                quam iusto possimus cumque, obcaecati minus est dolores. 
+                                Tempore, rerum. Dignissimos, maxime tempora. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit. Fugiat possimus 
+                                consequatur eius. Possimus, dignissimos nisi consequatur vero 
+                                fugit, similique eum modi dolore eligendi sapiente ullam cumque 
+                                nulla sed repudiandae odit? </p>
+                    </div>
+                    <div class="container__main--info container__main--info2">
+                        <h5>Underrubrik</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Culpa repellat consequatur fuga deserunt eos tempora. Neque 
-                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
-                            tempora consectetur pariatur, recusandae blanditiis?
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Culpa repellat consequatur fuga deserunt eos tempora. Neque 
-                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
-                            tempora consectetur pariatur, recusandae blanditiis?</p>
+                                sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                                tempora consectetur pariatur, recusandae blanditiis? 
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                                sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                                tempora consectetur pariatur, recusandae blanditiis?
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                                sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                                tempora consectetur pariatur, recusandae blanditiis?</p>
+                    </div>
+                    <div class="container__main--info container__main--info3">
+                        <h5>Underrubrik</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                                Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                                sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                                tempora consectetur pariatur, recusandae blanditiis?</p>
+                    </div>
                 </div>
-                <div>
-                    <h5>Underrubrik</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Culpa repellat consequatur fuga deserunt eos tempora. Neque 
-                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
-                            tempora consectetur pariatur, recusandae blanditiis?</p>
+                <div class="container__main--img container__main--img2">
+                    <img class="img2" src="../images/collaboration.png" alt="workers discussing">
                 </div>
             </div>
-        </div>
-        <div class="container container4">
-            <img class="img--two" src="../images/collaboration.png" alt="workers discussing">
-        </div>
-        <footer class="container container5">
+        </main>
+        <footer class="container container__footer">
             <p>Företaget</p>
             <p>Gatan 99</p>
             <p>111 11 Staden</p>
@@ -82,10 +84,10 @@
     <script>
         function burgerMenu() {
             let burger = document.getElementById("nav-bar");
-            if (burger.className === "main__nav") {
+            if (burger.className === "header__nav") {
             burger.className += " responsive";
             } else {
-            burger.className = "main__nav";
+            burger.className = "header__nav";
             }
         }
         </script>
