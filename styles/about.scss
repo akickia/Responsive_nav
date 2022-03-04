@@ -1,0 +1,130 @@
+@use 'fonts';
+
+body {
+    background-color:rgb(71, 71, 253);
+    color:#dae265;
+    font-family: fonts.$headingfont;
+    max-width: 1200px;
+    width: 100%;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;   
+    justify-content: center;
+    max-width: 90%;
+    width: 100%;
+    margin: auto;
+}
+
+header {
+    min-height: 70px;
+    background-color: black;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__nav {
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;  
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 90%;
+    width: 100%;
+    list-style-type: none;
+    align-items: flex-start;
+}
+
+.main__nav a {
+    float: left;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: antiquewhite;
+    padding: 5%;
+    transition: 0.3s;
+}
+
+.main__nav a:hover {
+    background-color: #e4d616;
+    color: black;
+}
+
+.main__nav .closebtn {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: rgb(218, 226, 101);
+}
+
+.open-btn {
+    font-size:16px;
+    cursor: pointer;
+    padding: 2%;
+    align-self: flex-start;
+    color: antiquewhite;
+}
+
+.open-btn:hover {
+    background-color: #95D5B2;
+    color: black;
+}
+
+.main__content--img {
+    display: flex;
+    justify-content: center;
+
+    .main__img {
+        max-width: 90%;
+        display: flex;
+        justify-content: center;
+        img {
+            max-width: 90%;
+            margin: 2% 0;
+        }
+        .img--one {
+            opacity: 0.7;
+        }
+    }    
+}
+
+.main__content {
+    max-width: 90%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: black;
+    justify-content: space-around;
+    font-size: 12px;
+    background-color: black;
+    width: 100%;
+}
+
+
+

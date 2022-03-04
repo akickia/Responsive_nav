@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/offers.css">
+    <title>Erbjudanden</title>
+</head>
+<body>
+    <section>
+        <header class="container container1">
+            <nav class="main__nav" id="nav-bar">
+                <ul>
+                    <a href="../index.html"><li>Start</li></a>
+                    <a href="about.html"><li>Om företaget</li></a>
+                    <a href="products.html"><li>Våra produkter</li></a>
+                    <a href="offers.html"><li>Erbjudanden</li></a>
+                    <a href="other.html"><li>Övrigt</li></a>
+                    <a class="icon" onclick="burgerMenu()">
+                    <i class="fa fa-bars"></i></a>
+                </ul>
+            </nav>
+        </header>
+        <div class="container container2">
+            <div class="main__img main__img--one">
+                    <img class="img--one" src="../images/notebook.jpg" alt="people">
+                </div>
+        </div>
+        <div class="container container3">
+            <div class="main__content--text">
+                <div class="main__heading">
+                    <h1>Företagsnamn</h1>
+                </div>
+                <div class="main__info">
+                    <h3>Rubrik</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                            A laudantium, culpa nemo fugiat quibusdam quasi ipsam sit 
+                            quam iusto possimus cumque, obcaecati minus est dolores. 
+                            Tempore, rerum. Dignissimos, maxime tempora. Lorem ipsum, 
+                            dolor sit amet consectetur adipisicing elit. Fugiat possimus 
+                            consequatur eius. Possimus, dignissimos nisi consequatur vero 
+                            fugit, similique eum modi dolore eligendi sapiente ullam cumque 
+                            nulla sed repudiandae odit? </p>
+                </div>
+                <div>
+                    <h5>Underrubrik</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                        Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                            tempora consectetur pariatur, recusandae blanditiis? 
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                            tempora consectetur pariatur, recusandae blanditiis?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                            tempora consectetur pariatur, recusandae blanditiis?</p>
+                </div>
+                <div>
+                    <h5>Underrubrik</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                            Culpa repellat consequatur fuga deserunt eos tempora. Neque 
+                            sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
+                            tempora consectetur pariatur, recusandae blanditiis?</p>
+                </div>
+            </div>
+        </div>
+        <div class="container container4">
+            <img class="img--two" src="../images/presentation.png">
+        </div>
+        <footer class="container container5">
+            <p>Företaget</p>
+            <p>Gatan 99</p>
+            <p>111 11 Staden</p>
+        </footer>
+    </section>
+
+    <script>
+        function burgerMenu() {
+            let burger = document.getElementById("nav-bar");
+            if (burger.className === "main__nav") {
+            burger.className += " responsive";
+            } else {
+            burger.className = "main__nav";
+            }
+        }
+        </script>
+
+</body>
+</html>
