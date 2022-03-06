@@ -71,6 +71,15 @@ ul {
     color: black;
 }
 
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+.img2 {
+    width: 400px;
+}
+
 @media screen and (max-width: 600px) {
     .container__main--text {
         flex-direction: column

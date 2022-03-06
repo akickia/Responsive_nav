@@ -215,6 +215,16 @@ ul {
   color: black;
 }
 
+#main {
+  -webkit-transition: margin-left 0.5s;
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+
+.img2 {
+  width: 400px;
+}
+
 @media screen and (max-width: 600px) {
   .container__main--text {
     -webkit-box-orient: vertical;
