@@ -4,48 +4,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.header__nav {
-  overflow: hidden;
-}
-
-.header__nav a {
-  float: left;
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 2%;
-}
-
-.header__nav a:hover {
-  background-color: #e4d616;
-  color: black;
-}
-
-a:active {
-  background-color: gray;
-  color: black;
-}
-
-.header__nav .icon {
-  display: none;
-}
-
-ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  max-width: 90%;
-  width: 100%;
-  list-style-type: none;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-a {
-  text-decoration: none;
-  color: antiquewhite;
-}
-
 section {
   display: -ms-grid;
   display: grid;
@@ -116,11 +74,15 @@ section > *:nth-child(3) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2%;
 }
 
 .container__main--info-text {
-  max-width: 60%;
-  height: 50%;
+  max-width: 50%;
+  max-height: 650px;
   overflow: auto;
 }
 
@@ -130,15 +92,18 @@ section > *:nth-child(3) {
 
 .img1 {
   max-width: 100%;
-  opacity: 0.7;
 }
 
 .container__main--img2 {
-  max-width: 90%;
+  padding: 2%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .img2 {
-  max-width: 100%;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .container__footer {
@@ -161,6 +126,48 @@ section > *:nth-child(3) {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 12px;
+}
+
+.header__nav {
+  overflow: hidden;
+}
+
+.header__nav a {
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 2%;
+}
+
+.header__nav a:hover {
+  background-color: #e4d616;
+  color: black;
+}
+
+a:active {
+  background-color: gray;
+  color: black;
+}
+
+.header__nav .icon {
+  display: none;
+}
+
+ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 90%;
+  width: 100%;
+  list-style-type: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
 }
 
 @media screen and (max-width: 600px) {
@@ -196,5 +203,11 @@ section > *:nth-child(3) {
 
   ul {
     display: block;
+  }
+
+  .container__main--info-text {
+    max-height: 100%;
+    overflow: visible;
+    max-width: 90%;
   }
 }

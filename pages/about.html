@@ -11,8 +11,8 @@
 </head>
 <body>
     <section>
-        <header>
-            <nav class="main__nav" id="nav-bar">
+        <header class="container container__header">
+            <nav class="header__nav" id="nav-bar">
                 <a class="closebtn" onclick="closeNav()">&times;</a>
                 <ul>
                     <a href="../index.html"><li>Start</li></a>
@@ -25,30 +25,30 @@
             <span class="open-btn" onclick="openNav()">&#9776; Menu</span>
         </header>
         
-        <div class="main__content--img">
-            <div class="main__img main__img--one">
-                <img class="img--one" src="../images/people.jpg" alt="company-people">
+        <main class="container container__main">
+            <div class="container__main--img container__main--img1">
+                <img class="img1" src="../images/people.jpg" alt="company-people">
             </div>
-        </div>
-        <div class="main__content">
-            <div class="main__content--text">
-                <div class="main__heading">
-                    <h1>Företagsnamn</h1>
-                </div>
-                <div class="main__info">
-                    <h3>Rubrik</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-                            A laudantium, culpa nemo fugiat quibusdam quasi ipsam sit 
-                            quam iusto possimus cumque, obcaecati minus est dolores. 
-                            Tempore, rerum. Dignissimos, maxime tempora. Lorem ipsum, 
-                            dolor sit amet consectetur adipisicing elit. Fugiat possimus 
-                            consequatur eius. Possimus, dignissimos nisi consequatur vero 
-                            fugit, similique eum modi dolore eligendi sapiente ullam cumque 
-                            nulla sed repudiandae odit? </p>
-                </div>
-                <div>
-                    <h5>Underrubrik</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            
+            <div class="container__main--text">
+                <div class="container__main--info-text">
+                    <div class="container__main--heading">
+                    <h2>Om företaget</h2>
+                    </div>
+                    <div class="container__main--info container__main--info1">
+                        <h3>Rubrik</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                A laudantium, culpa nemo fugiat quibusdam quasi ipsam sit 
+                                quam iusto possimus cumque, obcaecati minus est dolores. 
+                                Tempore, rerum. Dignissimos, maxime tempora. Lorem ipsum, 
+                                dolor sit amet consectetur adipisicing elit. Fugiat possimus 
+                                consequatur eius. Possimus, dignissimos nisi consequatur vero 
+                                fugit, similique eum modi dolore eligendi sapiente ullam cumque 
+                                nulla sed repudiandae odit? </p>
+                    </div>
+                    <div class="container__main--info container__main--info2">
+                        <h5>Underrubrik</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                             Culpa repellat consequatur fuga deserunt eos tempora. Neque 
                                 sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
                                 tempora consectetur pariatur, recusandae blanditiis? 
@@ -60,22 +60,21 @@
                                 Culpa repellat consequatur fuga deserunt eos tempora. Neque 
                                 sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
                                 tempora consectetur pariatur, recusandae blanditiis?</p>
-                </div>
-                <div>
-                    <h5>Underrubrik</h5>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    </div>
+                    <div class="container__main--info container__main--info3">
+                        <h5>Underrubrik</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                                 Culpa repellat consequatur fuga deserunt eos tempora. Neque 
                                 sequi repellendus deleniti? Unde iure iste natus quibusdam omnis 
                                 tempora consectetur pariatur, recusandae blanditiis?</p>
+                    </div>
+                </div>
+                <div class="container__main--img container__main--img2">
+                    <img class="img2" src="../images/network.jpg" alt="people in a ring">
                 </div>
             </div>
-        </div>
-        <div class="main__content--img">
-                <div class="main__img main__img--two">
-                    <img class="img--one" src="../images/network.jpg" alt="people in a ring">
-                </div>
-        </div>
-        <footer>
+        </main>
+        <footer class="container container__footer">
             <p>Företaget</p>
             <p>Gatan 99</p>
             <p>111 11 Staden</p>
@@ -85,12 +84,12 @@
     <script>
         function openNav() {
           document.getElementById("nav-bar").style.width = "250px";
-          document.getElementById("main__content").style.marginLeft = "250px";
+          document.getElementById("container__header").style.marginLeft = "250px";
         }
         
         function closeNav() {
           document.getElementById("nav-bar").style.width = "0";
-          document.getElementById("main__content").style.marginLeft= "0";
+          document.getElementById("body").style.marginLeft= "0";
         }
         </script>
 
